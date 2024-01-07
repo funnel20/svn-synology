@@ -8,15 +8,17 @@ Synology DSM version 7 doesn't have the native SVN application anymore. The last
 
 Purpose: Get a working alternative for the native SVN application in DSM 6.2, so it's possible to update the NAS to DSM 7 while still using SVN.
 
-This tutorial describes 3 steps:
+This tutorial describes 4 steps:
 1) Install the Docker application on the NAS with DSM 6.2.
 2) Create a lightweight Docker container with SVN Server image that points toward your existing SVN repositories.
 3) Relocate the URL of all existing local working copies to the new SVN protocol of the Docker container.
+4) Create new repository.
 
 This means that no data has to be moved or renamed on the NAS. Only the repository URLs should be relocated for your working copies.
+An added benefit is that the repositories can be accessed via both the existing native SVN application in DSM 6 **and** the new Docker SVN for DSM 6 and 7. So it allows proper verification on DSM 6, before you're convinced to upgrade to DSM 7.
 
 ## Prerequisites
-* You have an existing folder `svn` in the root (`volume1`) of your NAS with your existing repositories. This is the default folder that the native DSM SVN application uses.
+* There is an existing folder `svn` in the root (`volume1`) of the NAS with your existing repositories. This is the default folder that the native DSM SVN application uses.
 
 ## Comparison between available images
 
