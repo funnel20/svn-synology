@@ -12,12 +12,12 @@ Detailed instructions how to use your existing SVN repositories with a lightweig
 * These instructions are intended for users who are not familiar with Docker and/or the Linux Command Line Interface. Hence the abundance of screenshots and explanations. I hope that the advanced reader can appreciate my effort to help a wide audience and is not offended by all "the obvious".
 * All screenshots are taken on:
     * Synology DS218+ NAS with DSM version `6.2.4-25556 Update 7`.
-    * MacBook with macOS Ventura `13.6.3 `.
+    * MacBook with macOS Ventura `13.6.3`.
 
 ## Important
 
-Based on the first 2 notes we have decided to use another image from ["garethflowers"](./README.md), which is maintained and contains the almost latest SVN version 1.14.2 from April 2022.  
-For anyone who is still interested in the discontinued "elleflorio" image, we have left the instructions below.
+Based on the first 2 notes I have decided to use another image from ["garethflowers"](./README.md), which is maintained and contains the almost latest SVN version 1.14.2 from April 2022.  
+For anyone who is still interested in the discontinued "elleflorio" image, I have left the instructions below.
 
 ## Sources
 
@@ -153,10 +153,6 @@ The svn version of the Docker image can also be requested from the command line;
 
 DSM 6.2.4-25556 Update 7 is shipped with version 1.14.0 from May 2020 as can be seen when entering `svn --version` in the SSH Terminal.  
 Based on this I have decided to install the more up-to-date ["garethflowers"](./README.md) image.
-
-# Setup SVN repositories
-
-This is similarly as described for the ["garethflowers"](./README.md#Setup-SVN-repositories) image.
 
 # Issues
 

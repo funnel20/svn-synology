@@ -16,7 +16,7 @@ This tutorial describes 3 steps:
 This means that no data has to be moved or renamed on the NAS. Only the repository URLs should be relocated for your working copies.
 
 ## Prerequisites
-* You have an existing folder `svn` in the root of your NAS with your existing repositories. This is the default folder that the native SVN application uses.
+* You have an existing folder `svn` in the root (`volume1`) of your NAS with your existing repositories. This is the default folder that the native DSM SVN application uses.
 
 ## Comparison between available images
 
