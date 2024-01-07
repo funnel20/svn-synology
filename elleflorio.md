@@ -5,7 +5,7 @@ Detailed instructions how to use your existing SVN repositories with a lightweig
 ## Notes
 
 * This tutorial describes what worked for me, but is no guarantee for others. Please use all information at your own risk and without any warranty. 
-* Before starting, ensure to create **backups** of your existing repositories. There is plenty of information about this, I would recommened to start simple recommended `hotcopy` command, as explained [here](https://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-repository-backup.html).
+* Before starting, ensure to create **backups** of your existing repositories. There is plenty of information about this online. I would recommend to start simple with the recommended `hotcopy` command, as explained [here](https://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-repository-backup.html).
 * This Docker [image from "elleflorio"](https://github.com/elleFlorio/svn-docker) is no longer maintained.
 * This Docker image contains SVN version 1.9.7 from August 2017, while the latest version 1.14.3 is from December 2023. See the [Subversion Release History](https://subversion.apache.org/docs/release-notes/release-history.html).
 * This Docker image contains the Linux Alpine version 3.5.2 from March 2017, while the latest version 3.19.0 is from December 2023. See the [Linux Alpine Release History](https://www.alpinelinux.org/posts/).

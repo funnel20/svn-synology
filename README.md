@@ -22,20 +22,20 @@ An added benefit is that the repositories can be accessed via both the existing 
 
 ## Comparison between available images
 
-I started with the Docker image from "elleflorio". However, during the setup I discovered that it contains a pretty outdated version of SVN and that the image was no longer maintained. Hence an alternative image from "garethflowers" is found. Here is the comparison between the 2 images:
+I started with the Docker image from "elleflorio". However, during the setup I discovered that it contains a pretty outdated version of SVN and that the image was no longer maintained. Although I got it working, this signficant downgrade of SVN version was a no go. Hence an alternative image from "garethflowers" is found. Here is the comparison between the 2 images:
 
 > | Image  | Maintained  | SVN Version  | Linux Alpine version  | SVN protocol  | HTTP protocol | Size  |
 > |---|---|---|---|---|---|---|
 > | elleflorio      | [No](https://github.com/elleFlorio/svn-docker)            |  1.9.7 (Aug-2017) | 3.5.2 (Mar-2017)  | Yes  | Yes  | 50 MB   |
 > | garethflowers   | [Yes](https://github.com/garethflowers/docker-svn-server) | 1.14.2 (Apr-2022) | 3.17.3 (Mar-2023) | Yes  | No   | 17 MB   |
 
-This page describes all the steps for the up-to-date "garethflowers" image. Clicke [here](/elleflorio.md) for the "elleflorio" image.  
+This page describes all the steps for the up-to-date "garethflowers" image. Click [here](/elleflorio.md) for the "elleflorio" image.  
 Spending more time with the Docker container also resulted in more experience and a new understanding that the existing SVN repositories could just be used from their original location. Therefor the appoach on this page is more simple than for the "elleflorio" image.
 
 ## Notes
 
 * This tutorial describes what worked for me, but is no guarantee for others. Please use all information at your own risk and without any warranty. 
-* Before starting, ensure to create **backups** of your existing repositories. There is plenty of information about this, I would recommened to start simple recommended `hotcopy` command, as explained [here](https://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-repository-backup.html).
+* Before starting, ensure to create **backups** of your existing repositories. There is plenty of information about this online. I would recommend to start simple with the recommended `hotcopy` command, as explained [here](https://tortoisesvn.net/docs/release/TortoiseSVN_en/tsvn-repository-backup.html).
 * This Docker [image from "garethflowers"](https://github.com/garethflowers/docker-svn-server) is still maintained.
 * This Docker image contains the recent SVN version 1.14.2 from April 2022, while the latest version 1.14.3 is from December 2023. See the [Subversion Release History](https://subversion.apache.org/docs/release-notes/release-history.html).
 * This Docker image contains the recent Linux Alpine version 3.17.3 from March 2023, while the latest version 3.19.0 is from December 2023. See the [Linux Alpine Release History](https://www.alpinelinux.org/posts/).
